@@ -13,11 +13,11 @@ public class Main {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate date = LocalDate.parse("13/02/2022", formatter);
 
-        Flight f1 = new Flight(date, LocalTime.parse("23:00"), "isfahan", "tehran",
+        Flight f1 = new Flight(date, LocalTime.parse("13:00"), "isfahan", "tehran",
                 320.5, 55, 780.3, 2);
-        Flight f2 = new Flight(date, LocalTime.parse("21:00"), "isfahan", "mashhad",
+        Flight f2 = new Flight(date, LocalTime.parse("11:00"), "isfahan", "mashhad",
                 900d, 110, 1570.5, 50);
-        Flight f3 = new Flight(date, LocalTime.parse("23:00"), "isfahan", "tehran",
+        Flight f3 = new Flight(date, LocalTime.parse("10:00"), "isfahan", "tehran",
                 320.5, 55, 780.3, 87);
 
         String name1 = sc.next();

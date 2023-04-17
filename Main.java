@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+         // *if you are using LocalDateTime, change the formatter for it.
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate date = LocalDate.parse("13/02/2022", formatter);
 
@@ -54,6 +56,8 @@ public class Main {
 class Flight {
     private LocalDate date;
     private LocalTime time;
+    // or:
+    // private LocalDateTime dateTime;
     private ArrayList<Passenger> passengers;
     private String origin;
     private String destination;
@@ -68,6 +72,13 @@ class Flight {
         //Exceptions?!!
         //........
     }
+    
+    // with LocalDateTime uncomment this constructor:
+//     public Flight(LocalDateTime dateTime, String origin, String destination,
+//                   double distance, int duration, double cost, int capacity) {
+//         //Exceptions?!!
+//         //........
+//     }
 }
 
 class Passenger {
